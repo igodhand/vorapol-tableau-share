@@ -6,7 +6,7 @@ This github repository is created by Vorapol (Ping) for sharing with Tableau Use
 
 * **BasicHyperAPI** - Basic Usage of Tableau Hyper API, presented on Tableau User Group Thailand, https://youtu.be/toB8qBWsO70?t=3379
 * **HyperAPI-COVID-DDC** - Integration between API data source (COVID-19 Open Data) from Department of Disease Control and Tableau Hyper
-  API, Tableau Server Client to get JSON data from API Dataset, then create Hyper file for publish to Tableau Server
+  API, Tableau Server Client to get JSON data from API Dataset, then create Hyper file for publish to Tableau Server. (Revised on March 2022)
 
 ## Community
 
