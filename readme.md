@@ -1,6 +1,6 @@
-# Vorapol S. (Ping) Code Repository for Tableau User Group Thailand
+## Code Repository for Tableau User Group Thailand
 
-This github repository is created for sharing with Tableau User Group Thailand users :)  
+This github repository is created by Vorapol (Ping) for sharing with Tableau User Group Thailand users :)  
 
 ## Community
 
