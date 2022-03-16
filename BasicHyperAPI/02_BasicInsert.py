@@ -1,3 +1,4 @@
+# Sample Code by Vorapol S. (Ping)
 # https://help.tableau.com/current/api/hyper_api/en-us/docs/hyper_api_create_update.html
 
 from tableauhyperapi import *
