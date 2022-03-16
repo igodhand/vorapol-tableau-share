@@ -1,0 +1,17 @@
+# Config Folder
+
+.idea/
+.vscode/
+
+# Python Folder
+__pycache__
+
+# Hyper File
+
+*.hyper
+hyperd.log
+
+# Config File
+
+_CONFIG.py
+CONFIG.py
