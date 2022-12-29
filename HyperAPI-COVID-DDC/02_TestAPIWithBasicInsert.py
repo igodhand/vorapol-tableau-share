@@ -20,7 +20,8 @@ with HyperProcess(Telemetry.SEND_USAGE_DATA_TO_TABLEAU) as hyper:
 
         connection.catalog.create_schema('Extract')
         example_table = TableDefinition(TableName('Extract', 'COVID'), [
-            TableDefinition.Column('txn_date', SqlType.varchar(10)),
+            TableDefinition.Column('year', SqlType.big_int()),
+            TableDefinition.Column('weeknum', SqlType.big_int()),
             TableDefinition.Column('new_case', SqlType.big_int()),
             TableDefinition.Column('total_case', SqlType.big_int()),
             TableDefinition.Column('new_case_excludeabroad', SqlType.big_int()),
@@ -37,7 +38,8 @@ with HyperProcess(Telemetry.SEND_USAGE_DATA_TO_TABLEAU) as hyper:
         with Inserter(connection, example_table) as inserter:
             for record in res:
                 inserter.add_row([
-                    record['txn_date'],
+                    record['year'],
+                    record['weeknum'],
                     record['new_case'],
                     record['total_case'],
                     record['new_case_excludeabroad'],
