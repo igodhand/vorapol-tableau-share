@@ -22,5 +22,4 @@ The source code for the site is licensed under the MIT license, which you can fi
 
 ## Warranty
 
-As dictated by MIT License, this code repository comes without warranty, if you need consulting service, please contact author at vorapolst(
-at)gmail.com
+As dictated by MIT License, this code repository comes without warranty.

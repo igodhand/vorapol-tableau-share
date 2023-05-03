@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau Embedded</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+    function exportImage(){
+        var viz = document.getElementById('tableauViz');
+        viz.exportImageAsync();
+    }
+    function exportPdf(){
+        var viz = document.getElementById('tableauViz');
+        viz.displayDialogAsync("export-pdf");
+    }
+    function exportCrosstab(){
+        var viz = document.getElementById('tableauViz');
+        viz.displayDialogAsync("export-cross-tab");
+    }
+</script>
+<input type="button" onclick="exportImage();" value="Export Image"/>
+<input type="button" onclick="exportPdf();" value="Export PDF"/>
+<input type="button" onclick="exportCrosstab();" value="Export Crosstab"/>
+
+<div style="height:auto;">
+    <tableau-viz id="tableauViz" src="https://public.tableau.com/views/SuperstoreSimpleVS/CustomersEmbed"></tableau-viz>
+</div>
+<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.5.0.min.js"></script>
+
+
+</body>
+</html>
